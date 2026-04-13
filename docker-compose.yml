@@ -5,11 +5,20 @@ services:
       - '4000:4000'
     env_file:
       - .env
+    environment:
+      DATABASE_URL: postgresql://gateway:password@db:5432/gateway
+      REDIS_URL: redis://redis:6379
     depends_on:
       db:
         condition: service_healthy
       redis:
         condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'wget', '-q', '--spider', 'http://localhost:4000/health']
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
     restart: unless-stopped
 
   db:
