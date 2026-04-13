@@ -22,8 +22,12 @@
     "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.4.15",
     "@nestjs/platform-express": "^10.4.15",
+    "@nestjs/typeorm": "^11.0.1",
+    "ioredis": "^5.10.1",
+    "pg": "^8.20.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.28"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
