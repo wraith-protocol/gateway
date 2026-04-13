@@ -7,6 +7,7 @@ import { TeamsModule } from './teams/teams.module';
 import { KeysModule } from './keys/keys.module';
 import { RateLimitModule } from './rate-limit/rate-limit.module';
 import { UsageModule } from './usage/usage.module';
+import { BillingModule } from './billing/billing.module';
 import configuration from './config/configuration';
 
 @Module({
@@ -21,6 +22,7 @@ import configuration from './config/configuration';
     KeysModule,
     RateLimitModule,
     UsageModule,
+    BillingModule,
     HealthModule,
   ],
 })
