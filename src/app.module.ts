@@ -5,6 +5,8 @@ import { StorageModule } from './storage/storage.module';
 import { AuthModule } from './auth/auth.module';
 import { TeamsModule } from './teams/teams.module';
 import { KeysModule } from './keys/keys.module';
+import { RateLimitModule } from './rate-limit/rate-limit.module';
+import { UsageModule } from './usage/usage.module';
 import configuration from './config/configuration';
 
 @Module({
@@ -17,6 +19,8 @@ import configuration from './config/configuration';
     AuthModule,
     TeamsModule,
     KeysModule,
+    RateLimitModule,
+    UsageModule,
     HealthModule,
   ],
 })
