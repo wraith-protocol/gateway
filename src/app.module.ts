@@ -9,6 +9,7 @@ import { RateLimitModule } from './rate-limit/rate-limit.module';
 import { UsageModule } from './usage/usage.module';
 import { BillingModule } from './billing/billing.module';
 import { ProxyModule } from './proxy/proxy.module';
+import { WebhooksModule } from './webhooks/webhooks.module';
 import configuration from './config/configuration';
 
 @Module({
@@ -25,6 +26,7 @@ import configuration from './config/configuration';
     UsageModule,
     BillingModule,
     ProxyModule,
+    WebhooksModule,
     HealthModule,
   ],
 })
